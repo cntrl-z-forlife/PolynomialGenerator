@@ -1,7 +1,5 @@
 #include <iostream>
 #include <cmath>
-#include <chrono>
-#include <thread>
 using namespace std;
 
 int main() {
@@ -33,6 +31,5 @@ int main() {
   a = double(x1*(y3-y2)+x2*(y1-y3)+x3*(y2-y1)) / ((x1-x2)*(x1-x3)*(x2-x3));
   b = double((y2-y1) / (x2-x1)) - (a*(x1+x2));
   c = double(y1 - (a * (pow((x1),2))) - (b) * (x1));
-  cout << "The polynomial equation that contains these points is: \n\n";
   cout <<"\na:"<<a<<"\nb:"<<b<<"\nc:"<<c;
 }
